@@ -1,0 +1,39 @@
+<div class="topic">
+  <h2 class="normal">🚀 Productivity</h2>
+  {{#get "posts" filter="primary_tag:productivity" limit="3"}}
+    {{#foreach posts}}
+      <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
+    {{/foreach}}
+  {{/get}}
+  <a href="/productivity/" class="article-more-link fs14 ttu b color-text nolink">Read more articles on Productivity &rarr;</a>
+</div>
+
+<div class="topic">
+  <h2 class="normal">🎓 Studying</h2>
+  {{#get "posts" filter="primary_tag:studying" limit="3"}}
+    {{#foreach posts}}
+      <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
+    {{/foreach}}
+  {{/get}}
+  <a href="/studying/" class="article-more-link fs14 ttu b color-text nolink">Read more articles on Studying &rarr;</a>
+</div>
+
+<div class="topic">
+  <h2 class="normal">🎬 YouTubing</h2>
+  {{#get "posts" filter="primary_tag:youtube" limit="3"}}
+    {{#foreach posts}}
+      <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
+    {{/foreach}}
+  {{/get}}
+  <a href="/youtube/" class="article-more-link fs14 ttu b color-text nolink">Read more articles on YouTubing &rarr;</a>
+</div>
+
+<div class="topic">
+  <h2 class="normal">🛠️ Tech</h2>
+  {{#get "posts" filter="primary_tag:tech" limit="3"}}
+    {{#foreach posts}}
+      <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
+    {{/foreach}}
+  {{/get}}
+  <a href="/tech/" class="article-more-link fs14 ttu b color-text nolink">Read more articles on tech &rarr;</a>
+</div>
