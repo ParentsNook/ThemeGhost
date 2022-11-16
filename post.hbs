@@ -140,31 +140,11 @@
       {{/if}}
 
 
-      {{#if @custom.cove_id}}
-      <hr>
-
-      <h2 class="toc-exclude"><span id="cove-count"></span> {{t "Comments"}}</h2>
-
-      {{^if @member}}
-        <p><a href="" data-portal="signup">{{t "Sign up"}}</a> {{t "or"}} <a href="" data-portal="signin">{{t "Sign in"}}</a> {{t "to join the conversation."}}<br>
-      {{/if}}
-
-      <div id="cove"></div>
-
-      {{#if @member}}
-        <p>{{t "Signed in as"}} {{@member.email}} · <a href="#" data-members-signout>{{t "Sign out"}}</a></p>
-      {{/if}}
-
-      <script>
-      const Cove = {
-        contentId: "{{id}}",
-        memberId: "{{@member.uuid}}",
-        memberEmail: "{{@member.email}}",
-        memberName: "{{@member.firstname}}"
-      }
-      </script>
-
-      {{/if}}
+      {{#if @site.comments_enabled}}
+    
+        {{comments}}
+    
+{{/if}}
     </div>
   </div>
 
