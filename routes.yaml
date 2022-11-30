@@ -4,22 +4,17 @@ routes:
     data: page.home
   /signup/: members-signup # Free sign up page
   /signin/: members-signin # Member sign in
-  /account/: members-account # Member sign in
-
+  /account/: members-account # Member sign i
+  
 collections:
   /:
     permalink: /{slug}/
     filter: tag:-[podcast,book]
-  # /podcast/:
-  #   permalink: /podcast/{slug}/
-  #   filter: tag:podcast
-  #   template: podcast
-  #   data: page.podcast
-  # /book-notes/:
-  #   permalink: /book-notes/{slug}/
-  #   filter: tag:book
-  #   template: book-notes
-  #   data: page.book-notes
+  /nooks/:
+    permalink: /nooks/{slug}/
+    template: nooks
+    filter: primary_tag:nooks
+
 
 taxonomies:
   tag: /tag/{slug}/

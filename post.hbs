@@ -114,6 +114,8 @@
     </div>
   </article>
 
+  
+
   {{#if access}}
   <div class="container container--narrow">
     <div class="post-content centered mt4">
@@ -141,9 +143,9 @@
 
 
       {{#if @site.comments_enabled}}
-    
+    {{#if comments}}
         {{comments}}
-    
+    {{/if}}
 {{/if}}
     </div>
   </div>

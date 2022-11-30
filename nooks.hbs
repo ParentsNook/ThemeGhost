@@ -1,0 +1,12 @@
+<div>
+  <a href="/nooks/">List of Nooks</a></h5>
+  <ul>
+    {{#get "posts" limit="all" filter="tag:nooks" order="published_at asc"}}
+      {{#foreach posts}}
+        <li>
+          <a href="{{url}}">{{title}}</a>
+        </li>
+      {{/foreach}}
+    {{/get}}
+  </ul>
+</div>
