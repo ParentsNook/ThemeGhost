@@ -23,14 +23,12 @@
 
         <div class="fs20">
           
-          {{content}}
-          
         </div>
 
-        <div class="mt2">
+        <div class="mt2 mb3">
           {{> subscribe-form-inline}}
         </div>
-        
+
       </div>
 
       <div class="home__video" style="padding-top:0">
@@ -58,30 +56,17 @@
       {{content}}
     </div>
 
-    <div class="mt2">
-      {{> subscribe-form-inline}}
-    </div>
+    
   
   </div>
 
   {{/if}}
+  <a id="resource" href="#">Join the Circle for this Nook</a>
+
+<script>
+document.getElementById('resource').href = 'https://my.site/key';
+</script>
 {{/post}}
 </div>
 
-  <div class="container centered container--narrow">
-    <div class="post-content centered mt4">
-      <div class="mt4">
-
-        <h2 class="normal mt4 mb1">{{t "Read past issues"}}</h2>
-
-        {{#get "posts" filter="tag:newsletter" limit="all"}}
-          {{#foreach posts}}
-            {{> article-link}}
-          {{/foreach}}
-        {{/get}}
-
-      </div>
-    </div>
-  </div>
-
-</div>
+  

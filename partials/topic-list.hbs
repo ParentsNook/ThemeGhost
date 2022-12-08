@@ -1,39 +1,43 @@
+
 <div class="topic">
-  <h2 class="normal">🚀 Productivity</h2>
-  {{#get "posts" filter="primary_tag:productivity" limit="3"}}
+  <h2 class="normal">How we Started</h2>
+  {{#get "posts" filter="primary_tag:how-we-started" limit="3"}}
     {{#foreach posts}}
       <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
     {{/foreach}}
   {{/get}}
-  <a href="/productivity/" class="article-more-link fs14 ttu b color-text nolink">Read more articles on Productivity &rarr;</a>
+  <a href="/how-we-started/" class="article-more-link fs14 ttu b color-text nolink">Read more on how we started &rarr;</a>
 </div>
 
-<div class="topic">
-  <h2 class="normal">🎓 Studying</h2>
-  {{#get "posts" filter="primary_tag:studying" limit="3"}}
-    {{#foreach posts}}
-      <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
-    {{/foreach}}
-  {{/get}}
-  <a href="/studying/" class="article-more-link fs14 ttu b color-text nolink">Read more articles on Studying &rarr;</a>
-</div>
 
 <div class="topic">
-  <h2 class="normal">🎬 YouTubing</h2>
-  {{#get "posts" filter="primary_tag:youtube" limit="3"}}
-    {{#foreach posts}}
-      <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
-    {{/foreach}}
-  {{/get}}
-  <a href="/youtube/" class="article-more-link fs14 ttu b color-text nolink">Read more articles on YouTubing &rarr;</a>
-</div>
-
-<div class="topic">
-  <h2 class="normal">🛠️ Tech</h2>
+  <h2 class="normal">Past Nooks</h2>
   {{#get "posts" filter="primary_tag:tech" limit="3"}}
     {{#foreach posts}}
       <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
     {{/foreach}}
   {{/get}}
-  <a href="/tech/" class="article-more-link fs14 ttu b color-text nolink">Read more articles on tech &rarr;</a>
+  <a href="/past-nooks/" class="article-more-link fs14 ttu b color-text nolink">Read more articles on tech &rarr;</a>
+</div>
+
+
+<div class="topic">
+  <h2 class="normal">Footage from a SF Nook</h2>
+  {{#get "posts" filter="primary_tag:footage" limit="3"}}
+    {{#foreach posts}}
+      <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
+    {{/foreach}}
+  {{/get}}
+  <a href="/footage/" class="article-more-link fs14 ttu b color-text nolink">Footage by a fellow parent &rarr;</a>
+</div>
+
+
+<div class="topic">
+  <h2 class="normal">Reviews, what people says about us</h2>
+  {{#get "posts" filter="primary_tag:reviews" limit="3"}}
+    {{#foreach posts}}
+      <a href="{{url}}" title="{{title}}" class="article-link color-text nolink">{{title}}</a>
+    {{/foreach}}
+  {{/get}}
+  <a href="/reviews/" class="article-more-link fs14 ttu b color-text nolink">Reviews (What people are saying about us) &rarr;</a>
 </div>

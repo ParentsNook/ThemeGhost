@@ -42,13 +42,13 @@
 
   <div class="home__topics">
 
-    <a class="home__topic-block tc color-text nolink mt2" href="/playfacilitators/">
+    <a class="home__topic-block tc color-text nolink mt2" href="/starter-package-play-facilitators/">
       <div class="fs45 mb1"></div>
       <h2 class="mb1">PlayFacilitators(Starter Package)</h2>
       <p>Orientation material to re-resource ourselves as a Play Facilitator in a Nook care space</p>
     </a>
 
-    <a class="home__topic-block tc color-text nolink mt2" href="/hosting-a-nook/">
+    <a class="home__topic-block tc color-text nolink mt2" href="/starter-package-host-a-nook/">
       <div class="fs45 mb1"></div>
       <h2 class="mb1">Hosting a Nook</h2>
       <p>Orientation materials on how we can host a Nook ourselves effectively</p>
@@ -90,11 +90,11 @@
 
     <div class="home__latest mt4">
 
-      <h2 class="fs32 mb1">{{t "Latest Articles"}}</h2>
+      <h2 class="fs32 mb1">{{t "You may want to check out"}}</h2>
       
       <hr class="line mb1">
 
-      {{#get "posts" limit="5" include="tags,tiers"}}
+      {{#get "posts" filter="primary_tag:checkout" limit="5" include="tags,tiers"}}
         {{#foreach posts}}
           <div class="article-link">
             <div>
